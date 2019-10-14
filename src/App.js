@@ -5,6 +5,7 @@ import  {FComponant, FirstComp}  from './components/FirstComp';
 import ClassComp from './components/SecondComp';
 import FuctionProps from './components/FunProps';
 import ClassProp from './components/ClsProps';
+import ClsState from './components/FirstState';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <h3>Happy To Have you.</h3>
         </ClassProp>
         <hr />
+        <ClsState />
     </div>
   );
 }

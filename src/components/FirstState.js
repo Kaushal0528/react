@@ -1,16 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class ClsState extends React.Component {
+class ClsState extends Component {
     constructor(){
         super()
         this.state = {
             message: "Welcome User"
         }
-        this.changeMessage = this.changeMessage.bind(this);
+        //this.changeMessage = this.changeMessage.bind(this);
     }
 
-    changeMessage () {
-        this.setState({
+    changeMessage(){
+        this.setState({ 
             message: "Thanqu For subscribe"
         })
     }
@@ -19,7 +19,7 @@ class ClsState extends React.Component {
             <div>
                 <h1>State</h1>
                 <h2>{this.state.message}</h2>
-                <button onClick={this.changeMessage}>Subscribe</button>
+                <button onClick={() => this.changeMessage()}>Subscribe</button>
                 <p></p>
             </div>
         )

@@ -6,6 +6,7 @@ import ClassComp from './components/SecondComp';
 import FuctionProps from './components/FunProps';
 import ClassProp from './components/ClsProps';
 import ClsState from './components/FirstState';
+import Counter from './components/Counter'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </ClassProp>
         <hr />
         <ClsState />
+        <Counter /><br />
     </div>
   );
 }
